@@ -1,6 +1,10 @@
 const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
+const { server } = require('../config')
+
+const port = server.PORT
+const host = server.HOST
 
 const app = express()
 app.use(morgan('dev'))
@@ -9,7 +13,7 @@ app.use(cors())
 
 app.use('/', express.static('public'))
 
-app.listen(3000, () => {
+app.listen(port, host, () => {
   console.log('Server running')
 })
 
