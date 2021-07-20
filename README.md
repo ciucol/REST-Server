@@ -1,3 +1,3 @@
 # Notes REST Server
 
-Use ```npm install```for install dependencies
+Use ```npm install``` for install dependencies
