@@ -2,8 +2,9 @@ const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
 const { server } = require('../config')
+require('dotenv').config
 
-const port = server.PORT
+const port = process.env.PORT
 const host = server.HOST
 
 const app = express()
