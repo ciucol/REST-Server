@@ -1,5 +1,5 @@
 require('colors')
-const Server = require('./models/server')
+const Server = require('./server')
 
 const app = new Server()
 
